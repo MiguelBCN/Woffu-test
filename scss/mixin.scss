@@ -1,0 +1,8 @@
+@mixin displayFlexRow {
+  display: flex;
+  flex-flow: row nowrap;
+}
+@mixin displayFlexCol {
+  display: flex;
+  flex-flow: column nowrap;
+}

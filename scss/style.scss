@@ -1,0 +1,112 @@
+@import "reset";
+@import "variables";
+@import "mixin"; //Aqui comienza el titulo
+#titulo-woffu {
+  background: $deepBlue;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 1px 15px 24px -7px rgba(145, 139, 145, 1);
+  h1 {
+    color: lighten($offWhite, 5);
+    font-size: 20px;
+    font-weight: 100;
+  }
+  span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+//Aqui comienza el cuerpo y la tabla
+#cuerpo-woffu {
+  padding: 20px;
+  width: 100%;
+  background-color: #f3f2f7;
+}
+#tabla-woffu {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 3px 27px -8px rgba(145, 139, 145, 1);
+  border-radius: 10px;
+  background-color: lighten($offWhite, 5);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .cabeceraTabla {
+    @include displayFlexRow;
+    padding: 5px;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    .cabeceraTabla-1 {
+      flex-grow: 1;
+      padding: 0 2px;
+      span {
+        font-weight: 900;
+        font-size: 18px;
+      }
+    }
+    .cabeceraTabla-2 {
+      align-items: center;
+      flex-grow: 2;
+      @include displayFlexRow;
+      div {
+        @include displayFlexRow;
+        align-items: center;
+        padding: 0 2px;
+        i {
+          padding-left: 2px;
+        }
+      }
+    }
+    span {
+      color: darken($deepBlue, 5);
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+  tr {
+    width: 100%;
+    border-bottom: rgba(145, 128, 128, 0.733) solid 1px;
+    &:first-child {
+      background: $offWhiteDarken;
+    }
+  }
+  td {
+    width: (100% /4);
+  }
+}
+.displayFlexRow {
+  @include displayFlexRow;
+}
+.avatar {
+  height: $avatarSize;
+  width: $avatarSize;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  span {
+    display: none;
+    color: $offWhite;
+    font-weight: bold;
+  }
+}
+
+.pagination {
+  li {
+    display: inline;
+  }
+}
