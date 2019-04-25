@@ -47,6 +47,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -63,7 +64,7 @@ li {
     font-weight: bold; }
 
 #cuerpo-woffu {
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
   background-color: #f3f2f7; }
 
@@ -150,11 +151,18 @@ li {
       font-size: 15px; }
   #tabla-woffu tr {
     width: 100%;
-    border-bottom: rgba(145, 128, 128, 0.733) solid 1px; }
+    border-bottom: rgba(145, 128, 128, 0.733) solid 1px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     #tabla-woffu tr:first-child {
       background: #d5d6da; }
   #tabla-woffu td {
-    width: 25%; }
+    width: 25%;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .displayFlexRow {
   display: -webkit-box;
@@ -180,7 +188,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: red; }
+  background: #cae8c5; }
   .avatar span {
     display: none;
     color: #f3f2f7;

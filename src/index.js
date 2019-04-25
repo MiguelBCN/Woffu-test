@@ -22,11 +22,13 @@ var app = new Vue({
       for (let x of empleados) {
         //Mejoro el formato de presentacion de la fecha
         x.EmployeeStartDate = x.EmployeeStartDate.substring(0, 10);
-        //
+        //Añado un atributo extra para las iniciales
         x.Iniciales = x.FirstName.substring(0, 1) + x.LastName.substring(0, 1);
+        //Esto arreglara si algun url es null
         if (!x.ImageURL) {
           x.ImageURL = "";
         }
+        console.log(`Dias libres${x.AvailableDays} de ${x.UsedDays}`);
       }
       return empleados;
     }

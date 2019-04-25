@@ -61,8 +61,9 @@
             <!-- UserKey -->
             <td>{{ empleado.UserKey }}</td>
             <!-- UsedDays(blue bar),Avaible Days(grey bar) -->
-            <td>
-                <progress class="barraVacaciones" :value="empleado.UsedDays" :max="empleado.AvailableDays">
+            <td> <div><p>{{empleado.AvailableDays}}/{{empleado.UsedDays}}</p></div>
+                <progress class="barraVacaciones" :value="(((empleado.UsedDays*100)/(empleado.AvailableDays|1))?100-((empleado.UsedDays*100)/(empleado.AvailableDays|1)):0-((empleado.UsedDays*100)/(empleado.AvailableDays|1)))" :max="100">
+                  
             </td>
             <!-- “EmployeeStartDate” -->
             <td>{{ empleado.EmployeeStartDate }}</td>

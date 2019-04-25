@@ -6,6 +6,7 @@ $offWhite: #f3f2f7;
 $offWhiteDarken: #d5d6da;
 $strongYellow: #d1ff05, #038d03, #c90f0f, #38038d;
 $key: random(length($strongYellow));
+$randomColor: rgb(random(255), random(255), random(255));
 
 //SIZES
 $avatarSize: 50px;

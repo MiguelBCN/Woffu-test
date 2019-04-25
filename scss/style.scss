@@ -5,6 +5,7 @@
   background: $deepBlue;
   align-items: center;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-content: center;
   box-shadow: 1px 15px 24px -7px rgba(145, 139, 145, 1);
@@ -20,7 +21,7 @@
 }
 //Aqui comienza el cuerpo y la tabla
 #cuerpo-woffu {
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
   background-color: #f3f2f7;
 }
@@ -78,12 +79,15 @@
   tr {
     width: 100%;
     border-bottom: rgba(145, 128, 128, 0.733) solid 1px;
+    align-items: center;
     &:first-child {
       background: $offWhiteDarken;
     }
   }
   td {
     width: (100% /4);
+    text-align: center;
+    align-items: center;
   }
 }
 .displayFlexRow {
@@ -97,7 +101,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: $randomColor;
   span {
     display: none;
     color: $offWhite;
