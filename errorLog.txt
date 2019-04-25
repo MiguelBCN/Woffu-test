@@ -1,0 +1,7 @@
+//ERRORES DETECTADOS
+1.-Url de las imagenes
+    *En la respuesta de la API al Usar los links algunas dan error 
+    *En otras simplemente estaba vacia
+2.-API atributos de las API
+    *El atributo JobTitleId en algunos campos esta vacio
+    *Uno de los atributos ID estaba vacio
