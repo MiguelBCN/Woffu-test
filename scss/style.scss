@@ -31,7 +31,6 @@
   box-shadow: 0px 3px 27px -8px rgba(145, 139, 145, 1);
   border-radius: 10px;
   background-color: lighten($offWhite, 5);
-
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
@@ -76,13 +75,16 @@
       font-size: 15px;
     }
   }
+
   tr {
-    width: 100%;
     border-bottom: rgba(145, 128, 128, 0.733) solid 1px;
     align-items: center;
     &:first-child {
       background: $offWhiteDarken;
     }
+  }
+  th {
+    padding: 5px;
   }
   td {
     width: (100% /4);

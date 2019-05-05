@@ -30,10 +30,37 @@
         </div>
         <table>
           <tr>
-            <th>Informacion personal</th>
-            <th>ID</th>
-            <th>Vacaciones</th>
-            <th>Fecha de incorporacion a la empresa</th>
+            <th>
+              <div class="cabeceraTabla">
+              <div>Informacion personal </div>
+              <div>
+              <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+          </th>
+            <th>
+                <div class="cabeceraTabla">
+                <div>ID</div>
+                <div>
+                <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i>
+              </div>
+              </div>
+            </th>
+            <th>
+                <div class="cabeceraTabla">
+              <div>Vacaciones </div>
+              <div>
+              <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i>
+            </div>
+          </div></th>
+            <th>
+                <div class="cabeceraTabla">
+                <div>Fecha de incorporacion a la empresa</div>
+                <div>
+                <i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i>
+              </div>
+              </div>
+            </th>
           </tr>
           <tr v-for="empleado in empleados" :key="empleado.$id">
             <!-- imageURL,Acronym for the avatar

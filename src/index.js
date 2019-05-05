@@ -35,7 +35,11 @@ var app = new Vue({
   },
   methods: {
     filtrarPorFecha: function(fecha) {},
-    paginacion: function(numEMpleados) {}
+    paginacion: function(numEMpleados) {},
+    ordenarTabla:function(columna,reverse){
+      let 
+
+    }
   }
 });
 

@@ -150,13 +150,14 @@ li {
       font-weight: 500;
       font-size: 15px; }
   #tabla-woffu tr {
-    width: 100%;
     border-bottom: rgba(145, 128, 128, 0.733) solid 1px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
     #tabla-woffu tr:first-child {
       background: #d5d6da; }
+  #tabla-woffu th {
+    padding: 5px; }
   #tabla-woffu td {
     width: 25%;
     text-align: center;
@@ -188,7 +189,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #cae8c5; }
+  background: #80b8d0; }
   .avatar span {
     display: none;
     color: #f3f2f7;
